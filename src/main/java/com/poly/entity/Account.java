@@ -25,7 +25,5 @@ public class Account  implements Serializable{
 	String photo;
 	boolean admin;
 	boolean activated;
-	@JsonIgnore
-	@OneToMany(mappedBy = "account")
-	List<Order> orders;
+	
 }

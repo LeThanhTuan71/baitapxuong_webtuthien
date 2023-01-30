@@ -15,80 +15,10 @@
 <style>
 
 /*****************globals*************/
-body {
-  font-family: 'open sans';
-  overflow-x: hidden; }
 
-img {
-  max-width: 100%; }
 
-.preview {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column; }
-  @media screen and (max-width: 996px) {
-    .preview {
-      margin-bottom: 20px; } }
 
-.preview-pic {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1; }
 
-.preview-thumbnail.nav-tabs {
-  border: none;
-  margin-top: 15px; }
-  .preview-thumbnail.nav-tabs li {
-    width: 18%;
-    margin-right: 2.5%; }
-    .preview-thumbnail.nav-tabs li img {
-      max-width: 100%;
-      display: block; }
-    .preview-thumbnail.nav-tabs li a {
-      padding: 0;
-      margin: 0; }
-    .preview-thumbnail.nav-tabs li:last-of-type {
-      margin-right: 0; }
-
-.tab-content {
-  overflow: hidden; }
-  .tab-content img {
-    width: 100%;
-    -webkit-animation-name: opacity;
-            animation-name: opacity;
-    -webkit-animation-duration: .3s;
-            animation-duration: .3s; }
-
-.card {
-  margin-top: 50px;
-  background: #eee;
-  padding: 3em;
-  line-height: 1.5em; }
-
-@media screen and (min-width: 997px) {
-  .wrapper {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex; } }
-
-.details {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column; }
 
 .colors {
   -webkit-box-flex: 1;
@@ -96,15 +26,19 @@ img {
       -ms-flex-positive: 1;
           flex-grow: 1; }
 
-.product-title, .price, .sizes, .colors {
+
+.product-t{
+	font-weight :bold;
   text-transform: UPPERCASE;
-  font-weight: bold; }
+  color:red;
+  }
 
 .checked, .price span {
   color: #ff9f1a; }
 
 .product-title, .rating, .product-description, .price, .vote, .sizes {
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  font-weight :bold; }
 
 .product-title {
   margin-top: 0; }
@@ -241,12 +175,12 @@ img {
 							<ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
 								style="-bs-scroll-height: 100px;">
 								<li class="nav-item"><a class="nav-link active"
-									aria-current="page" href="#">Home</a></li>
-								<li class="nav-item"><a class="nav-link" href="#sp">Sản
-										phẩm</a></li>
+									aria-current="page" href="/home/index">Home</a></li>
+								<li class="nav-item"><a class="nav-link" href="#sp">
+										Chương trình</a></li>
 								<li class="nav-item"><a class="nav-link" href="#tt"
 									tabindex="-1" aria-disabled="true">Tin tức</a></li>
-								<li class="nav-item"><a class="nav-link" href="#dc"
+								<li class="nav-item"><a class="nav-link" href="#tt"
 									tabindex="-1" aria-disabled="true">Địa chỉ</a></li>
 								<li class="nav-item"><a class="nav-link"
 									href="/mailer/mailer" tabindex="-1" aria-disabled="true">Liên
@@ -270,11 +204,7 @@ img {
 							</form>
 
 
-							<form class="d-flex">
-								<a href="/cart/view"><img
-									src="https://img.icons8.com/bubbles/2x/buy.png" alt=""
-									style="width: 70px; height: 70px; margin-top: 5px;"> </a>
-							</form>
+						
 							<form class="d-flex">
 								<a href="/account/login"><img
 									src="https://laodongnhatban.com.vn/images/2017/09/01/2-serv.png" alt=""
@@ -301,40 +231,13 @@ img {
 								</div>
 								<div class="details col-md-6">
 									<h3 class="product-title">${item.name}</h3>
-									<div class="rating">
-										<div class="stars">
-											<span class="fa fa-star checked"></span> <span
-												class="fa fa-star checked"></span> <span
-												class="fa fa-star checked"></span> <span class="fa fa-star"></span>
-											<span class="fa fa-star"></span>
-										</div>
-										<span class="review-no">41 reviews</span>
-									</div>
-									<p class="product-description">${item.describe }</p>
-									<h4 class="price">
-										current price: <span>${item.price} VNĐ</span>
-									</h4>
-									<p class="vote">
-										<strong>91%</strong> of buyers enjoyed this product! <strong>(87
-											votes)</strong>
-									</p>
-									<h5 class="sizes">
-										sizes: <span class="size" data-toggle="tooltip" title="small">s</span>
-										<span class="size" data-toggle="tooltip" title="medium">m</span>
-										<span class="size" data-toggle="tooltip" title="large">l</span>
-										<span class="size" data-toggle="tooltip" title="xtra large">xl</span>
-									</h5>
-									<h5 class="colors">
-										colors: <span class="color orange not-available"
-											data-toggle="tooltip" title="Not In store"></span> <span
-											class="color green"></span> <span class="color blue"></span>
-									</h5>
-									<div class="action">
-										<button class="btn btn-primary" type="submit"> <i class="fa fa-cart-arrow-down" aria-hidden="true"></i> add
-											to cart</button>
-										<button class="like btn btn-default" type="button">
-											<span class="fa fa-heart"></span>
-										</button>
+										<div class="product-t">${item.loaihang}</div>
+										<br>
+							<h12	class="">${item.describe}<h12>
+						
+									
+									
+								
 									</div>
 								</div>
 							</div>

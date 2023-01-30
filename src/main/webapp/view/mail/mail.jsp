@@ -77,7 +77,7 @@
                         <div class="col-md-3">
                             <div class="contact-info">
                                 <img src="https://image.ibb.co/kUASdV/contact-image.png" alt="image" />
-                                <h2>Contact FPT Store</h2>
+                              
                                 <h4>We would love to hear from you !</h4>
                             </div>
                         </div>
@@ -86,13 +86,13 @@
                                 <div class="form-group">
                                     <label class="control-label col-sm-2" for="fname">From:</label>
                                     <div class="col-sm-10">
-                                        <form:input  class="form-control" path="from" value="lebaodangtv@gmail.com" />
+                                        <form:input  class="form-control" path="from" value="Tuanl3908@gmail.com" />
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="control-label col-sm-2" for="lname">To:</label>
                                     <div class="col-sm-10">
-                                        <form:input  class="form-control" path="to" value="lebaodangtv@gmail.com" />
+                                        <form:input  class="form-control" path="to" value="Tuanl3908@gmail.com" />
                                     </div>
                                 </div>
                                 <div class="form-group">

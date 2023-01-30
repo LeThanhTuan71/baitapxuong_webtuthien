@@ -29,14 +29,9 @@ public interface ProductDAO extends JpaRepository<Product, Integer>{
 	//lab6.5
 	Page<Product> findAllByNameLike(String keywords, Pageable pageable);
 	
-	//lab6.3
-	@Query("SELECT new Report(o.category, sum(o.price), count(o)) "
-			+ " FROM Product o "
-			+ " GROUP BY o.category"
-			+ " ORDER BY sum(o.price) DESC")
-	List<Report> getInventoryByCategory();
 	
-	// chi tiết sản phẩm
+	
+	
 	@Query("SELECT o FROM Product o WHERE o.id LIKE ?1")
 	List<Product> product(Integer id);
 	

@@ -16,13 +16,13 @@
 							<ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
 								style="-bs-scroll-height: 100px;">
 								<li class="nav-item"><a class="nav-link active"
-									aria-current="page" href="#">Home</a></li>
-								<li class="nav-item"><a class="nav-link" href="#sp">Sản
-										phẩm</a></li>
+									aria-current="page" href="/home/index">Home</a></li>
+								<li class="nav-item"><a class="nav-link" href="#sp">Chương trình
+										</a></li>
 								<li class="nav-item"><a class="nav-link" href="#tt"
 									tabindex="-1" aria-disabled="true">Tin tức</a></li>
 								<li class="nav-item"><a class="nav-link" href="#dc"
-									tabindex="-1" aria-disabled="true">Địa chỉ</a></li>
+								aria-current="page" href="/cart/view">Địa chỉ</a></li>
 								<li class="nav-item"><a class="nav-link"
 									href="/mailer/mailer" tabindex="-1" aria-disabled="true">Liên
 										hệ</a></li>
@@ -44,11 +44,7 @@
 									src="https://img.icons8.com/bubbles/2x/user.png" alt=""
 									style="width: 70px; height: 70px; margin-top: 30px;"> </a>
 							</form>
-							<form class="d-flex">
-								<a href="/cart/view"><img
-									src="https://img.icons8.com/bubbles/2x/buy.png" alt=""
-									style="width: 70px; height: 70px; margin-top: 30px;"> </a>
-							</form>
+						
 							<form class="d-flex">
 								<a href="/account/login"><img
 									src="https://laodongnhatban.com.vn/images/2017/09/01/2-serv.png" alt=""

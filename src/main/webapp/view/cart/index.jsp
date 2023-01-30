@@ -53,64 +53,13 @@
 			<main>
 				<!--Hình header-->
 				<div class="anh">
-					<img src="https://www.louisvuitton.com/images/louis-vuitton--LV_NBA_Drop2_Option1_DIE.jpg?wid=2048"
+					<img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fvn.pikbest.com%2Fbackgrounds%2Fqianku-charity-charity-poster-background_1894698.html&psig=AOvVaw0xvyyrsiH2Fhf7WYWLqTRO&ust=1675084796181000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCJiEx6Pv7PwCFQAAAAAdAAAAABAJ"
 						alt="" style="margin-top: 90px;">
 				</div>
 				<img src="/home/1.jpg" alt="" style="margin-top: 90px;">
 				<!--end header-->
 
-				<!--Sản phẩm-->
-				<div class="heading" id="sp">
-					<h1>GIỎ HÀNG</h1>
-				</div>
-
-
-				<table class="table" style="text-align: center;">
-					<thead>
-						<tr>
-							<th scope="col">Hình</th>
-							<th scope="col">Tên</th>
-							<th scope="col">Giá</th>
-							<th scope="col">Số lượng</th>
-							<th scope="col">Tổng tiền</th>
-							<th scope="col"></th>
-						</tr>
-					</thead>
-					<tbody>
-						<c:forEach var="item" items="${cart.items}">
-							<form action="/cart/update/${item.id}" method="post">
-								<input type="hidden" name="id" value="${item.id}">
-								<tr>
-									<td class="align-middle"><img class="pic-1" src="../images/${item.image}"
-											style="width: 150px; height: 150px;"></td>
-									<td class="align-middle">${item.name}</td>
-									<td class="align-middle">${item.price}</td>
-									<td class="align-middle"><input class="form-control" name="qty" value="${item.qty}"
-											onblur="this.form.submit()"></td>
-									<td class="text-right align-middle">${item.price * item.qty}</td>
-									<td class="text-right align-middle">
-										<a class="btn btn-success" href="/cart/remove/${item.id}">Remove</a>
-									</td>
-								</tr>
-							</form>
-						</c:forEach>
-						<tr>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td>Tổng: ${Total}</td>
-							<td></td>
-						</tr>
-					</tbody>
-				</table>
-				<center>
-					<td><a class="btn btn-success" href="/cart/clear">Clear Cart</a></td>
-					<td><a class="btn btn-success" href="/home/index">Add More</a></td>
-					<td><a class="btn btn-success" href="/cart/checkout">Ckeck Out</a></td>
-					<td><a class="btn btn-success" href="/cart/thanhtoan">Thanh toán</a></td>
-				</center>
-			</main>
+			
 			<jsp:include page="footer.jsp"/>
 			</div>
 		</body>

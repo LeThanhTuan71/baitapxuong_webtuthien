@@ -19,8 +19,8 @@ public class MailerController {
 
 	@RequestMapping("/mailer/mailer")
 	public String demo3(Model model) {
-		// 1. mail người nhận
-		//mailer.queue("caophucthinh24@gmail.com", "Subject..hi NGOC TRINH", "Body...hi NGOC TRINH");
+
+		
 		MailInfo mailinfo = new MailInfo();
 		model.addAttribute("mailinfo", mailinfo);
 		return "mail/mail";
@@ -29,7 +29,7 @@ public class MailerController {
 	//@ResponseBody
 	@RequestMapping("/mailer/send")
 	public String send(Model model, MailInfo mailinfo) {
-		// 1. mail người nhận
+	
 		mailer.queue(mailinfo.getTo(), mailinfo.getSubject(), mailinfo.getBody());
 		model.addAttribute("mail", mailinfo);
 		return "mail/send";

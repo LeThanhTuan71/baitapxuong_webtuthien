@@ -14,7 +14,7 @@ import org.springframework.web.context.annotation.SessionScope;
 import com.poly.bean.Item;
 import com.poly.dao.ProductDAO;
 import com.poly.entity.Product;
-import com.poly.utils.DB;
+
 
 //1. phạm vi là session
 @SessionScope

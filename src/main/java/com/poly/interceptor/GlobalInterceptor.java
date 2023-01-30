@@ -16,7 +16,7 @@ public class GlobalInterceptor implements HandlerInterceptor{
 	CategoryDAO dao;
 	
 	@Override
-	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
+	public boolean preHandle (HttpServletRequest request, HttpServletResponse response, Object handler)
 			throws Exception {
 		request.setAttribute("uri", request.getRequestURI());
 		return true;

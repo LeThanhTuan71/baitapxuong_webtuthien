@@ -69,8 +69,8 @@
 				<div class="col-md-3">
 					<div class="contact-info">
 						<img src="https://image.ibb.co/kUASdV/contact-image.png" alt="image" /> 
-						<h2>Contact Khánh Store</h2>
-						
+						<h2>  </h2>
+						Quỹ từ thiện bông sen
 					</div>
 				</div>
 				<div class="col-md-9">
